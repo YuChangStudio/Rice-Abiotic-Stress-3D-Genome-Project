@@ -1,0 +1,7 @@
+#BSUB -J RNAseq
+#BSUB -n 1
+#BSUB -R span[hosts=1]
+#BSUB -o RNAseq_standard.o
+#BSUB -e RNAseq_standard.e
+
+sh ~/scripts/rnaseq/standard_DEG/rnaseq.sh raw &
